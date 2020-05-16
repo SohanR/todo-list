@@ -1,0 +1,49 @@
+import "./style.css";
+
+//selectors
+
+const todoInput = document.querySelector(".todo-input");
+const todoButton = document.querySelector(".todo-button");
+const todoList = document.querySelector(".todo-list");
+
+//Event
+
+todoButton.addEventListener("click", addTodo);
+
+//functions
+
+function addTodo(event) {
+  //preventing
+  event.preventDefault();
+
+  //to-do div
+
+  const todoDiv = document.createElement("div");
+  todoDiv.classList.add("todo");
+
+  // create li
+
+  const newTodo = document.createElement("li");
+  newTodo.classList.add("todo-item");
+  newTodo.innerText = " heey!";
+
+  todoDiv.appendChild(newTodo);
+
+  //complete button
+
+  const completedButton = document.createElement("button");
+  completedButton.classList.add("compete-btn");
+  completedButton.innerHTML = "<i class='fas fa-chech'></i>";
+
+  todoDiv.appendChild(completedButton);
+
+  //trash button
+
+  const trashButton = document.createElement("button");
+  trashButton.classList.add("trash-btn");
+  trashButton.innerHTML = "<i class='fas fa-trash'></i>";
+
+  todoDiv.appendChild(trashButton);
+
+  todoList.appendChild(todoDiv);
+}
