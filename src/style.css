@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(120deg, #897fe2 0%, #85c8a3 100%);
+  color: white;
+  font-family: "poppins", sans-serif;
+  min-height: 100vh;
+}
+
+header {
+  font-size: 2.5rem;
+  font-family: "Permanent Marker", cursive;
+}
+
+header,
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  background: white;
+}
+
+form button {
+  color: #897fe2;
+  background: white;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+form button:hover {
+  background: #897fe2;
+  color: white;
+}
