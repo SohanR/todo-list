@@ -66,7 +66,7 @@ function deletecheck(e) {
 
   //check mark
 
-  if (item.classList[0] === "comlete-btn") {
+  if (item.classList[0] === "complete-btn") {
     const todo = item.parentElement;
     todo.classList.toggle("completed");
   }
