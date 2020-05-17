@@ -32,8 +32,8 @@ function addTodo(event) {
   //complete button
 
   const completedButton = document.createElement("button");
-  completedButton.classList.add("compete-btn");
-  completedButton.innerHTML = "<i class='fas fa-chech'></i>";
+  completedButton.classList.add("complete-btn");
+  completedButton.innerHTML = "<i class='fas fa-check'></i>";
 
   todoDiv.appendChild(completedButton);
 
@@ -44,6 +44,8 @@ function addTodo(event) {
   trashButton.innerHTML = "<i class='fas fa-trash'></i>";
 
   todoDiv.appendChild(trashButton);
+
+  //append to todo list
 
   todoList.appendChild(todoDiv);
 }
