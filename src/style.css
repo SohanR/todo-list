@@ -112,3 +112,33 @@ select {
   outline: none;
   border: none;
 }
+
+.select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+select {
+  color: #897fe2;
+  width: 10rem;
+  cursor: pointer;
+  padding: 1rem;
+  background: white;
+}
+
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  background: #897fe2;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  pointer-events: none;
+  transition: all 0.5s ease;
+}
+
+.select:hover::after {
+  background: white;
+  color: #897fe2;
+}
