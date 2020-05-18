@@ -104,3 +104,11 @@ form button:hover {
   transform: translateY(20rem) rotateZ(20deg);
   opacity: 0;
 }
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+}
